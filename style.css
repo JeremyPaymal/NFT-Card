@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  transition: 1s all;
+}
+
+body {
+  background-color: #14253d;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 90%;
+  margin: 1.5rem auto;
+  background-color: rgba(100, 100, 100, 0.5);
+  height: 1px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.description h1 a:hover,
+.credit a:hover {
+  color: #00fff7;
+}
+
+span {
+  color: antiquewhite;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.description img {
+  opacity: 1;
+  max-width: 100%;
+  border-radius: 0.4rem;
+}
+
+.overview {
+  position: absolute;
+  opacity: 0;
+  top: 35%;
+  right: 49%;
+}
+
+.picture:hover .image {
+  opacity: 0.3;
+}
+
+.picture:hover .overview {
+  opacity: 1;
+}
+
+.description p,
+.price p:last-child,
+.credit p {
+  color: #8bacda;
+}
+
+.price p:first-child {
+  color: #00fff7;
+}
+
+main {
+  background-color: #1b335a;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.description,
+.price,
+.credit {
+  margin: 1rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price img {
+  margin: 0 0.2rem;
+  vertical-align: middle;
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.credit img {
+  max-width: 100%;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 4rem;
+}
